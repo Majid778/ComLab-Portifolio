@@ -21,6 +21,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     position: relative;
     color: #FF8400;
@@ -40,6 +41,7 @@ body{
     animation: showRight 1s ease forwards;
     animation-delay: 1.4s;
 } */
+
 .navbar a{
     font-size: 18px;
     color: #FF8400;
@@ -52,6 +54,34 @@ body{
     color: #00abf0;
 }
 .navbar::before{
+        content: '';
+    position: absolute;
+    top: 0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background:#FFF7D4;
+    animation-name: showRight;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+
+.home {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    align-items: center;   
+    color:#4F200D;
+    padding: 0 13%;
+    display: flex;
+    align-items: center;
+
+}
+
+/* .home::before{
     content: '';
     position: absolute;
     top: 0;
@@ -59,27 +89,17 @@ body{
     width:100%;
     height: 100%;
     background:#FFF7D4;
-    animation: showRight 2s ease forwards;
-    animation-delay: 2s;
-}
+    animation-name: showRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
 
-.home {
-    position: relative;
-
-    display: flex;
-    height: 100vh;
-    align-items: center;   
-    color:#4F200D;
-    padding: 0 13%;
-    display: flex;
-
-    align-items: center;
-}
+} */
 
 .home-content {
     position: relative;
     padding-right: 10%;
-
     /* max-width: 600px; */
 
 }
@@ -88,7 +108,7 @@ body{
     font-size: 56px;
     font-weight: 700;
 }
-.home-content h1::before{
+/* .home-content h1::before{
     content: '';
     position: absolute;
     top: 0;
@@ -96,15 +116,19 @@ body{
     width:100%;
     height: 100%;
     background:#FFF7D4;
-    animation: showRight 1s ease forwards;
+    animation-name: showRight;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
     animation-delay: 0s;
-}
+} */
 .home-content h3 {
     position: relative;
     font-size: 35px;
     font-weight: 600;
+    padding-bottom: 1%;
 }
-.home-content h3::before{
+/* .home-content h3::before{
     content: '';
     position: absolute;
     top: 0;
@@ -112,13 +136,16 @@ body{
     width:100%;
     height: 100%;
     background:#FFF7D4;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-}
+    animation-name: showRight;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+} */
 .home-content p {
     font-size: 18px;
 }
-.home-content p::before{
+/* .home-content p::before{
     content: '';
     position: absolute;
     top: 0;
@@ -126,9 +153,13 @@ body{
     width:100%;
     height: 100%;
     background:#FFF7D4;
-    animation: showRight 1s ease forwards;
-    animation-delay: 2s;
-}
+    animation-name: showRight;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+} */
+
 .home-img{
     display: flex;
     flex-direction: column;
@@ -139,8 +170,21 @@ body{
     border-radius: 10px;
     padding: 20px;
     object-fit: contain;
-
 }
+
+/* .home-img::before{
+    position: absolute;
+    top: 0;
+    right:0;
+    width:100%;
+    height: 100%;
+    background:#FFF7D4;
+    animation-name: showRight;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+} */
 
 .home-img img{
     /* object-fit: contain; */
@@ -164,15 +208,31 @@ body{
     background: #00abf0;
 }
 
+.inactive{
+    display: none;
+}
+
+/* .active{
+    display: block;
+} */
+
+
 .about {
     position: relative;
-    padding:  10%;
+    padding-bottom: 8%;
+    padding-right: 10%;
+    padding-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #FFF7D4;
     color:#4F200D;
-    animation: fadeInLeft 1s ease forwards;
+    /* animation-name: fadeInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s; */
 }
 
 .about-content{
@@ -191,6 +251,7 @@ body{
     text-align: center;
 }
 .about-content h3{
+    font-size: 36px;
     padding: 1%;
 }
 .about-img {
@@ -212,6 +273,9 @@ body{
     border: .2rem solid #FF8400;
 }
 
+.about-content p {
+    font-size: 18px;
+}
 
 #project-carousel {
     display: flex;
@@ -219,61 +283,97 @@ body{
 }
   
 .projects{
-    padding-top: 10%;
     position: relative;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
     background:#FFF7D4;
 }
+
 .project-grid{
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(2,1fr);
+    height: 55%;
+    width: 55%;
+    margin-left: 22.5%;
 }
+
 .projects h1{
     position: relative;
     font-size: 56px;
     font-weight: 700;
     text-align: center;
+ 
 }
 
 .project{
     position: relative;
     align-items: center;
+    justify-content: center;
     padding: 4%;
+ 
 }
 
 .project .project-box{
     position: relative;
-    display: inline-block;
+    display: flex;
     align-items: center;
+    justify-content: center;
     box-shadow: 0 0 1rem #4F200D;
     overflow: hidden;
     border-radius: 2rem;
     gap: 2.5rem;
+    height: 100%;
+    width: 100%;
 }
 
 .project-box .project-content{
+    font-size: .65em;
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(rgba(0,0,0,.1),  #4F200D);
+    background: linear-gradient(rgba(0,0,0,.1), #4F200D);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     padding: 2rem;
+    overflow: hidden;
+    height:5;
+    transform: translateY(100%);
+}
 
+.project-box:hover .project-content{
+    transform: translateY(0);
+    transition: 0.5s ease;
 }
 
 .project-box img{
-    height: 500px;
-    width: 600px;
-    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    transition: 0.5s ease;
+
+}
+
+.project-box img:hover{
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 @keyframes showRight {
     100% {
         width: 0;
+    }
+}
+
+@keyframes showLeft {
+    100% {
+        width: 100%;
     }
 }
 
