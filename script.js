@@ -7,8 +7,7 @@ window.onscroll = () => {
         let offset = sec.offsetTop - 200;
         let height = sec.offsetHeight;
         //make the hover effect active for nav links
-        if (top >= offset && top < offset + height) {
-            let id = sec.getAttribute('id');
+        
 
         // let id = sec.getAttribute('id');
 

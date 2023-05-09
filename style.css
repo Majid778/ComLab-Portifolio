@@ -198,7 +198,7 @@ body{
     display: inline-block;
     background: #FF8400;
     color: #fff;
-    padding: 12px 34px;
+    padding: 12px 20px;
     margin-top: 20px;
     border-radius: 6px;
     text-decoration: none;
@@ -345,6 +345,16 @@ body{
     transform: translateY(100%);
 }
 
+.project-content h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 2%;
+}
+
+.project-content p{
+    font-size: .9rem;
+}
+
 .project-box:hover .project-content{
     transform: translateY(0);
     transition: 0.5s ease;
@@ -384,7 +394,6 @@ body{
     }
     100% {
         /* transform: translateX(0) translateY(0); */
-
     }
  }   
 
