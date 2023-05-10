@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- nav bar buttons -->
     <header class="header">
       <a href="#" class="logo">Majid.</a>
       <nav class="navbar">
@@ -18,7 +19,7 @@
         <a href="#projects">Projects</a>
       </nav>
     </header>
-
+<!-- start of home page -->
     <section
       class="home"
       id="trigger-home"
@@ -27,6 +28,8 @@
       data-aos-anchor-placement="top-center"
       data-aos-anchor="#trigger-home"
     >
+    <!-- Main text of the home page -->
+
       <div class="home-content">
         <h1>Hi, I'm Majid</h1>
         <h3>Computer Science Student</h3>
@@ -37,20 +40,22 @@
           leadership skills, and a significant ability to collaborate with teams
           and operate under pressure with a solid work ethic.
         </p>
-        <div style="display:flex;">
-          <div class="btn" style="padding-right:5%;">
+            <!-- social media icons -->
+
+        <div style="display: flex">
+          <div class="btn" style="padding-right: 5%">
             <a href="https://www.linkedin.com/in/majid-ibrahim-0b4217250/">
-              <img src="linkedin.png" alt="linkedin" style="width:2em;" />
+              <img src="linkedin.png" alt="linkedin" style="width: 2em" />
             </a>
           </div>
-          <div class="btn" style="padding-right:5%;">
+          <div class="btn" style="padding-right: 5%">
             <a href="https://www.instagram.com/majidibrahim778/">
-              <img src="insta.png" alt="insta" style="width:2em;" />
+              <img src="insta.png" alt="insta" style="width: 2em" />
             </a>
           </div>
-          <div class="btn" style="padding-right:5%;">
+          <div class="btn" style="padding-right: 5%">
             <a href="https://github.com/Majid778">
-              <img src="github.png" alt="github" style="width:2em;" />
+              <img src="github.png" alt="github" style="width: 2em" />
             </a>
           </div>
         </div>
@@ -59,6 +64,9 @@
         <img src="Majid.jpg" alt="home-img" />
       </div>
     </section>
+    <!-- end of home page -->
+<!-- start of about page -->
+
     <section
       id="aboutme"
       class="about"
@@ -85,8 +93,11 @@
         </p>
       </div>
     </section>
-
+<!-- end of about page -->
+<!-- start of project page -->
     <section class="projects" id="projects">
+      <!-- set the h1 as a anchor to trigger all the animations of the other elements in projects section -->
+
       <h1
         data-aos="fade-down"
         data-aos-anchor="#trigger-projects"
@@ -96,21 +107,29 @@
         Projects
       </h1>
       <div class="project-grid">
+              <!-- using different fade in animations to make the effect of the project boxes coming together -->
+
         <div
           class="project"
           data-aos="fade-down-right"
           data-aos-anchor="#trigger-projects"
           data-aos-anchor-placement="bottom-center"
         >
+          <!-- make a project box that has a short desciption and redirect button for each project -->
+
           <div class="project-box">
             <img src="Proj1.png" alt="30MFF" />
             <div class="project-content">
               <h3>30MFF</h3>
               <p>
-                This is a website dedicated to the 30MFF project. The website houses all the information about the project and the amazing team behind it.
+                This is a website dedicated to the 30MFF project. The website
+                houses all the information about the project and the amazing
+                team behind it.
               </p>
               <div class="btn">
-                <a href="https://majid778.github.io/30MFF-Website/">View Project</a>
+                <a href="https://majid778.github.io/30MFF-Website/"
+                  >View Project</a
+                >
               </div>
             </div>
           </div>
@@ -127,7 +146,9 @@
             <div class="project-content">
               <h3>Space Adventures</h3>
               <p>
-                Our very own comic! Experience the tale of astronauts investigating a mysterious SOS signal. All panels and audio were made by AI and guided by humans!
+                Our very own comic! Experience the tale of astronauts
+                investigating a mysterious SOS signal. All panels and audio were
+                made by AI and guided by humans!
               </p>
               <div class="btn">
                 <a href="https://a1m2n.github.io/assignment2/">View Project</a>
@@ -146,10 +167,13 @@
             <div class="project-content">
               <h3>The Sounds of Ramadan</h3>
               <p>
-                In the spirit of Ramadan, we present an immersive auditory experience. Embark on this journey, guided only by sounds.
+                In the spirit of Ramadan, we present an immersive auditory
+                experience. Embark on this journey, guided only by sounds.
               </p>
               <div class="btn">
-                <a href="https://hanasel.github.io/asg3/index.html">View Project</a>
+                <a href="https://hanasel.github.io/asg3/index.html"
+                  >View Project</a
+                >
               </div>
             </div>
           </div>
@@ -165,16 +189,22 @@
             <div class="project-content">
               <h3>Hackathon</h3>
               <p>
-                This is a website dedicated to the Hackathon event at NYUAD. The website houses features a video documentary about the event.
+                This is a website dedicated to the Hackathon event at NYUAD. The
+                website houses features a video documentary about the event.
               </p>
-              <div class="btn">                
-                <a href="https://abraiz01.github.io/CommunicationsLab/videoProject/">View Project</a>
+              <div class="btn">
+                <a
+                  href="https://abraiz01.github.io/CommunicationsLab/videoProject/"
+                  >View Project</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- end of project page -->
+<!-- include aos-data for the animations-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
